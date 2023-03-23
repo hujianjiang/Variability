@@ -1,0 +1,40 @@
+MarkerImage.ActinChannel	Laplacian of Gaussian
+MarkerImage.MinimumSize	8.0
+MarkerImage.MaximumSize	13.0
+MarkerImage.StepSize	2.5
+MarkerImage.ProcessPerSlice	0.0
+MarkerImage.Noise	1.0
+MarkerImage.MinimumLoGValue	4.333
+MarkerImage.XYRadius	2.667
+MarkerControlledWatershed.SegmentActin	true
+MarkerControlledWatershed.DAPIFilter	Mean
+MarkerControlledWatershed.DoExpThreshold	true
+MarkerControlledWatershed.ActinFilter	Mean
+MarkerControlledWatershed.ActinDams	false
+MarkerControlledWatershed.DAPIThreshold	IsoData
+Nuclei_Segmentation_3D.ActinChannel	2
+MarkerControlledWatershed.ActinThreshold	Triangle
+MarkerControlledWatershed.ExperimentalThreshold	6
+MarkerControlledWatershed.DAPIDams	false
+MarkerControlledWatershed.AdjustAttenuation	false
+Nuclei_Segmentation_3D.NucleusChannel	3
+Feature_Extractor_3D.ExcludeBorder	true
+Feature_Extractor_3D.ExcludeSize	false
+Feature_Extractor_3D.AdditionalChannel2	1
+Feature_Extractor_3D.AdditionalChannel1	1
+Feature_Extractor_3D.BorderExclusionZone	2
+Feature_Extractor_3D.ManualMarkers	false
+Feature_Extractor_3D.AdditionalMeasurement1	Nuclear
+Feature_Extractor_3D.AdditionalChannel3	2
+Feature_Extractor_3D.AdditionalMeasurement3	Nucleus surrounding
+Feature_Extractor_3D.AdditionalMeasurement2	Nucleus surrounding
+Feature_Extractor_3D.ExcludeBorder	true
+Feature_Extractor_3D.ExcludeSize	false
+Feature_Extractor_3D.AdditionalChannel2	1
+Feature_Extractor_3D.AdditionalChannel1	1
+Feature_Extractor_3D.BorderExclusionZone	2
+Feature_Extractor_3D.ManualMarkers	false
+Feature_Extractor_3D.AdditionalMeasurement1	Nuclear
+Feature_Extractor_3D.AdditionalChannel3	2
+Feature_Extractor_3D.AdditionalMeasurement3	Nucleus surrounding
+Feature_Extractor_3D.AdditionalMeasurement2	Nucleus surrounding

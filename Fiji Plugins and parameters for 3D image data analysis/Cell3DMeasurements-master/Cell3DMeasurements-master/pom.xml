@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>net.imagej</groupId>
+		<artifactId>pom-imagej</artifactId>
+		<version>15.7.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>sc.fiji</groupId>
+	<artifactId>Cell_Migration_Analyser_3D</artifactId>
+	<version>0.9</version>
+
+	<name>plugins/Cell_Migration_Analyser_3D.jar</name>
+	<description>Segments a DAPI/actin image in 3D.</description>
+
+	<developers>
+		<developer>
+			<id>mverp</id>
+			<name>Merijn van Erp</name>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>emarkus</id>
+			<name>Esther</name>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<properties>
+		<main-class>createmarkerimages.Create_Marker_Images_3D</main-class>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>myFiji</groupId>
+			<artifactId>NuclearUtilities</artifactId>
+			<version>0.1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\Data\Git\utils\target\NuclearUtilities-0.1.0.jar</systemPath>
+		</dependency>
+<!-- 		<dependency>
+		    <groupId>org.jfree</groupId>
+   			<artifactId>jfreechart</artifactId>
+    		<version>1.0.19</version>
+		</dependency>  -->
+		<dependency>
+		    <groupId>com.github.mcib3d</groupId>
+   			<artifactId>mcib3d-core</artifactId>
+    		<version>master-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.mcib3d</groupId>
+			<artifactId>mcib3d-plugins</artifactId>
+			<version>3.8.2</version>
+			<scope>system</scope>
+			<systemPath>C:\Users\Z228217\Desktop\Fiji.app\plugins\mcib3d-suite\mcib3d_plugins.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>github.com.ijpb</groupId>
+			<artifactId>MorphoLibJ</artifactId>
+			<version>1.3.3</version>
+			<scope>system</scope>
+			<systemPath>C:\Users\Z228217\Desktop\Fiji.app\plugins\MorphoLibJ_-1.3.6.jar</systemPath>
+		</dependency>
+		<dependency>
+    		<groupId>org.jfree</groupId>
+    		<artifactId>jfreechart</artifactId>
+    		<version>1.5.0</version>
+		</dependency>
+	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>${main-class}</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
