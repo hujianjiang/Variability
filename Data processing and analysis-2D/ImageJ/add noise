@@ -1,0 +1,78 @@
+
+experiments = newArray("U1E1", "U1E2", "U1E3", "U1E4", "U2E1", "U2E2", "U2E3", "U2E4", "U3E1", "U3E2", "U3E3"); 
+
+for (experiments_n = 0;experiments_n < 11; experiments_n++){
+experiments = newArray("U1E1", "U1E2", "U1E3", "U1E4", "U2E1", "U2E2", "U2E3", "U2E4", "U3E1", "U3E2", "U3E3"); 
+experiments_n = 0;
+string = "open=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\"+experiments[experiments_n]+"\\1 - Images\\C1\\Chan_1\\C1_T01.tif] sort";
+print(string);
+run("Image Sequence...", string);
+run("Add Specified Noise...", "stack standard=2");
+run("Image Sequence... ", "format=TIFF use save=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\U1E1\\1 - Images - Copy\\C1\\Chan_1\\Chan_10000.tif]");
+close();
+
+string = "open=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\"+experiments[experiments_n]+"\\1 - Images\\C2\\Chan_1\\C1_T01.tif] sort";
+print(string);
+run("Image Sequence...", string);
+run("Add Specified Noise...", "stack standard=2");
+run("Image Sequence... ", "format=TIFF use save=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\U1E1\\1 - Images - Copy\\C2\\Chan_1\\Chan_10000.tif]");
+close();
+
+string = "open=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\"+experiments[experiments_n]+"\\1 - Images\\C3\\Chan_1\\C1_T01.tif] sort";
+print(string);
+run("Image Sequence...", string);
+run("Add Specified Noise...", "stack standard=2");
+run("Image Sequence... ", "format=TIFF use save=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\U1E1\\1 - Images - Copy\\C3\\Chan_1\\Chan_10000.tif]");
+close();
+
+string = "open=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\"+experiments[experiments_n]+"\\1 - Images\\T1\\Chan_1\\C1_T01.tif] sort";
+print(string);
+run("Image Sequence...", string);
+run("Add Specified Noise...", "stack standard=2");
+run("Image Sequence... ", "format=TIFF use save=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\U1E1\\1 - Images - Copy\\T1\\Chan_1\\Chan_10000.tif]");
+close();
+
+string = "open=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\"+experiments[experiments_n]+"\\1 - Images\\T2\\Chan_1\\C1_T01.tif] sort";
+print(string);
+run("Image Sequence...", string);
+run("Add Specified Noise...", "stack standard=2");
+run("Image Sequence... ", "format=TIFF use save=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\U1E1\\1 - Images - Copy\\T2\\Chan_1\\Chan_10000.tif]");
+close();
+
+string = "open=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\"+experiments[experiments_n]+"\\1 - Images\\T3\\Chan_1\\C1_T01.tif] sort";
+print(string);
+run("Image Sequence...", string);
+run("Add Specified Noise...", "stack standard=2");
+run("Image Sequence... ", "format=TIFF use save=[D:\\Data\\MULTIMOT\\Processed\\XSP\\L2\\U1E1\\1 - Images - Copy\\T3\\Chan_1\\Chan_10000.tif]");
+close();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

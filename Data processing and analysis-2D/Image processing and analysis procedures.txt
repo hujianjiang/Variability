@@ -1,0 +1,6 @@
+1. Use Matlab stitcher to stitch the image data of Lab 2.
+2. Use CellProfiler pipeline to segment and quantify cell and nuclear masks.
+3. Use Matlab script "process_dynamics.m" to calculate protrusion, retracion, and short lived regions.
+4. Use R script "process_images.R" to generate "dat.R" files for each single experiments.
+5. Use R script "Generate_combined_dat_file.R" to create the "dat_v2.R" file by combine all "dat.R" files in each experiment.
+6. Use R script "DataAnalysis_datv2.R" to perform data analysis and linear mixed effect modelling.
